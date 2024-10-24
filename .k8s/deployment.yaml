@@ -14,7 +14,7 @@ spec:
         app: ping-pong
     spec:
       containers:
-      - image: sergiosfilho/ping-pong:latest
+      - image: sergiofsfilho/ping-pong:latest
         name: ping-pong
         ports:
         - containerPort: 8080
