@@ -11,5 +11,3 @@ spec:
     name: http
   selector:
     app: ping-pong
-    app.kubernetes.io/created-by: srgfrancisco
-    app.kubernetes.io/type: app

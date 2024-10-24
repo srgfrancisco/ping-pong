@@ -11,12 +11,10 @@ spec:
   selector:
     matchLabels:
       app: ping-pong
-      app.kubernetes.io/name: ping-pong
   template:
     metadata:
       labels:
         app: ping-pong
-        app.kubernetes.io/name: ping-pong
     spec:
       containers:
       - image: sergiofsfilho/ping-pong:latest
