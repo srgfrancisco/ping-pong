@@ -3,8 +3,13 @@ kind: Service
 metadata:
   name: ping-pong
 spec:
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 8080
+    protocol: TCP
+    name: http
   selector:
     app: ping-pong
+    app.kubernetes.io/created-by: srgfrancisco
+    app.kubernetes.io/type: app
